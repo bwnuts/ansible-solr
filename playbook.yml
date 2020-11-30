@@ -23,7 +23,7 @@
           src: "{{ download_dir }}/solr-{{ solr_version }}.tgz"
           dest: "{{ download_dir }}"
           remote_src: true
-          creates: "{{ download_dir }}/solr-{{ solr_version }}/README.
+          creates: "{{ download_dir }}/solr-{{ solr_version }}/README.txt"
 - name: Run Solr installation script
   command: >
          {{ download_dir }}/solr-{{ solr_version }}/bin/install_solr_service.sh
