@@ -40,3 +40,6 @@
           - name: Echo message
             command: echo {{ message }} >> ~/message.txt
           
+          - debug:
+              var: message
+          
